@@ -1,20 +1,21 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from "next/document"
 
+// eslint-disable-next-line import/no-default-export
 export default class extends Document {
   render(): JSX.Element {
     return (
       <Html lang="ja-JP">
         <Head>
-          <meta name="application-name" content="trading-tools" />
-          <meta name="description" content="my trading tools" />
-          <meta name="format-detection" content="telephone=no" />
-          <meta name="mobile-web-app-capable" content="yes" />
-          <meta name="msapplication-TileColor" content="#2B5797" />
-          <meta name="msapplication-tap-highlight" content="no" />
-          <meta name="theme-color" content="#000000" />
+          <meta content="trading-tools" name="application-name" />
+          <meta content="my trading tools" name="description" />
+          <meta content="telephone=no" name="format-detection" />
+          <meta content="yes" name="mobile-web-app-capable" />
+          <meta content="#2B5797" name="msapplication-TileColor" />
+          <meta content="no" name="msapplication-tap-highlight" />
+          <meta content="#000000" name="theme-color" />
           <meta
-            name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+            name="viewport"
           />
           <link href="/manifest.json" rel="manifest" />
           <link href="/icons/favicon.ico" rel="shortcut icon" />
