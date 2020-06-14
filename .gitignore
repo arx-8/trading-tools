@@ -5,6 +5,10 @@ node_modules
 .next
 .env*.local
 
+# next-pwa
+public/sw.js
+public/workbox-*.js
+
 # testing
 coverage
 
