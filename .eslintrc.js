@@ -36,10 +36,14 @@ module.exports = {
 
     "import/no-default-export": 2,
     "no-restricted-imports": [
-      2,
+      "error",
       {
-        name: "lodash",
-        message: "Use lodash/* instead.",
+        paths: ["lodash"],
+        patterns: [
+          // Use `import { Component } from "@material-ui/Component"` instead.
+          "@material-ui/*/*",
+          "!@material-ui/core/test-utils/*",
+        ],
       },
     ],
     "no-restricted-syntax": [
