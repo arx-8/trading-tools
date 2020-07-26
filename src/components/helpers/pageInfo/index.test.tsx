@@ -1,4 +1,4 @@
-import { difference } from "lodash-es"
+import difference from "lodash/difference"
 import { StaticRoutePath } from "src/constants/path"
 
 import { pageInfo } from "."

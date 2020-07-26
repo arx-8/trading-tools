@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 import Home from "../../pages/index"
 import { fireEvent, render } from "../testUtils"

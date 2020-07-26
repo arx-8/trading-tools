@@ -1,4 +1,9 @@
 module.exports = {
+  /**
+   * for absolute path import
+   * @see https://github.com/testing-library/react-hooks-testing-library/issues/294#issuecomment-663900081
+   */
+  moduleDirectories: ["<rootDir>/node_modules", "node_modules", "."],
   moduleFileExtensions: ["js", "ts", "tsx", "json"],
   moduleNameMapper: {
     "\\.(css|less|sass|scss)$": "identity-obj-proxy",

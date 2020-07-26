@@ -38,8 +38,12 @@ module.exports = {
     "no-restricted-imports": [
       "error",
       {
-        // Use `import { Component } from "@material-ui/*"` instead.
-        patterns: ["@material-ui/*/*", "!@material-ui/core/test-utils/*"],
+        paths: ["lodash"],
+        patterns: [
+          // Use `import { Component } from "@material-ui/Component"` instead.
+          "@material-ui/*/*",
+          "!@material-ui/core/test-utils/*",
+        ],
       },
     ],
     "no-restricted-syntax": [
