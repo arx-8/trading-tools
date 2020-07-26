@@ -1,3 +1,8 @@
 {
-  "presets": ["next/babel"]
+  "presets": ["next/babel"],
+  /**
+   * for svg support
+   * @see https://github.com/vercel/next.js/tree/canary/examples/svg-components
+   */
+  "plugins": ["inline-react-svg"]
 }
