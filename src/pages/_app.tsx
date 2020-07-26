@@ -2,12 +2,15 @@ import "normalize.css"
 
 import { AppProps } from "next/app"
 import { Fragment } from "react"
+import { Layout } from "src/components/templates/Layout"
 
 // eslint-disable-next-line import/no-default-export
 export default function ({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <Fragment>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
 
       <style global jsx>{`
         html,
